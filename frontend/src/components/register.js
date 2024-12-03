@@ -35,7 +35,7 @@ const Register = () => {
     console.log("Sending registration data:", newUser);  // Log the data you're sending
   
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/register", newUser, {
+      const response = await axios.post("https://role-based-authenticator-v9x2.onrender.com/api/auth/register", newUser, {
         headers: {
           "Content-Type": "application/json",
         }
